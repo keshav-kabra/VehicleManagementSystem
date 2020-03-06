@@ -1,0 +1,106 @@
+﻿@model CURD_mvc_application.Models.VehicleModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VehicleModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicletype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicletype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fueltype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fueltype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vehicleMass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vehicleMass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngineCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngineCapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Maxspeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Maxspeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Maxpower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Maxpower)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OnRoadPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OnRoadPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

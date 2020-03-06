@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VehicleMasterDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="VehicleModels">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="50" />
+    <Property Name="make" Type="nvarchar" MaxLength="50" />
+    <Property Name="Vehicletype" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fueltype" Type="nvarchar" MaxLength="10" />
+    <Property Name="vehicleMass" Type="int" />
+    <Property Name="EngineCapacity" Type="int" />
+    <Property Name="Maxspeed" Type="float" />
+    <Property Name="Maxpower" Type="float" />
+    <Property Name="OnRoadPrice" Type="float" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="VehicleMasterDBModelStoreContainer">
+    <EntitySet Name="VehicleModels" EntityType="Self.VehicleModels" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
